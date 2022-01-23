@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
 
 #define QWERTY 0
 #define GAMING 1
@@ -73,10 +74,10 @@
                 config_layer {
                         label = "CONFIG";
                         bindings = <
-   &reset     &none        &none        &none        &none        &none           &none &none &none &none &none &none 
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none &none &none &none &none &none
-   &none      &none        &none        &none        &none        &none           &none &none &none &none &none &none
-                                                &mo CONFIG &kp LCTL &mo NUMROW    &kp SPC &mo ADJUST &kp F13
+   &reset     &none        &none        &none        &none        &none           &rgb_ug RGB_TOG &none         &none   &none   &none   &none 
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none           &none         &none   &none   &none   &none
+   &none      &none        &none        &none        &none        &none           &none           &none         &none   &none   &none   &none
+                                                &mo CONFIG &kp LCTL &mo NUMROW    &kp SPC         &mo ADJUST    &kp F13
                         >;
                 };
         };
