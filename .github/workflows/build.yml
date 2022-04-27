@@ -29,6 +29,8 @@ jobs:
       fail-fast: false
       matrix: ${{fromJson(needs.matrix.outputs.matrix)}}
     steps:
+      - name: Update System
+        run: apt-get update && apt-get upgrade -y
       - name: Prepare variables
         id: variables
         run: |
