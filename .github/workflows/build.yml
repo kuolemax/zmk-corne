@@ -22,13 +22,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:2.5
+      image: zmkfirmware/zmk-build-arm:stable
     needs: matrix
     name: Build
     strategy:
       fail-fast: false
       matrix: ${{fromJson(needs.matrix.outputs.matrix)}}
     steps:
+      - name: Update System
+        run: apt-get update && apt-get upgrade -y
       - name: Prepare variables
         id: variables
         run: |
