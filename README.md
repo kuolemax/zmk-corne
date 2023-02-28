@@ -2,4 +2,4 @@
 
 ## keymap
 
-[Corne](./misc/corne-keymap.svg)
+![Corne](./misc/corne-keymap-1.svg)
