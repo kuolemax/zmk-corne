@@ -6,12 +6,16 @@ manifest:
       url-base: https://github.com/infused-kim
     - name: kuolemax
       url-base: https://github.com/kuolemax
+    - name: mozixun
+      url-base: https://github.com/mozixun-me
   projects:
     - name: zmk
       # remote: zmkfirmware
       # revision: main
-      remote: kuolemax
-      revision: encoder-fix
+      # remote: kuolemax
+      # revision: encoder-fix
+      remote: mozixun
+      revision: main
       import: app/west.yml
   self:
     path: config
