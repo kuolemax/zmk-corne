@@ -12,10 +12,10 @@ manifest:
     - name: zmk
       # remote: zmkfirmware
       # revision: main
-      # remote: kuolemax
-      # revision: encoder-fix
-      remote: mozixun
-      revision: main
+      remote: kuolemax
+      revision: bongo-cat
+      # remote: mozixun
+      # revision: main
       import: app/west.yml
   self:
     path: config
