@@ -76,27 +76,6 @@
         };
     };
 
-    macros {
-        phone: phone {
-            compatible = "zmk,behavior-macro";
-            label = "m_phone";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_1 &kp NUMBER_8 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_8 &kp NUMBER_2 &kp NUMBER_7 &kp NUMBER_6 &kp NUMBER_1 &kp NUMBER_9 &kp NUMBER_6>;
-        };
-        email: email {
-            compatible = "zmk,behavior-macro";
-            label = "m_email";
-            #binding-cells = <0>;
-            bindings = <&kp K &kp U &kp O &kp L &kp E &kp M &kp A &kp X &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
-        };
-        gmail: gmail {
-            compatible = "zmk,behavior-macro";
-            label = "m_gmail";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp H &kp E &kp N &kp Z &kp H &kp I &kp H &kp A &kp O &kp NUMBER_0 &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_6 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -166,7 +145,7 @@
 
        HOTKEY {
            bindings = <
-&trans  &email  &gmail  &phone  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans          &trans  &trans  &trans
